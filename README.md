@@ -1,6 +1,16 @@
-# article sfdeNN
+# -*- coding: utf-8 -*-
+#!/usr/local/bin/python
+# Author: yuxiangyu
+# Date: Mar 1, 2022 10:10 AM
+# =============================
+
+# article
 codes of  the article "An artificial neural network approach for solving space fractional differential equations"
 
+# author
+P.F. Dai & X.Y. YU
 
-# 中文
-论文相关例子的代码，如果需要，由于版权问题，请单独联系作者索取: xiangyu.yu@unidt.com
+
+# The Statement
+This paper has a 1 example of the code, if necessary, due to copyright issues, please contact the author to obtain.
+Contact: xiangyu.yu@unidt.com
