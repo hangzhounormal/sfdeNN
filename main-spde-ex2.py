@@ -13,7 +13,7 @@ import math
 import torch
 import argparse
 
-# setting random seed
+# set random seed
 np.random.seed(42)
 
 
@@ -31,6 +31,9 @@ def g(x):
 
 
 def d(x, i, alpha):
+    '''
+    \Gamma function
+    '''
     if i < np.ceil(alpha):
         return 0.0
     return math.gamma(i + 1) / math.gamma(i + 1 - alpha) * x ** (i - alpha)
@@ -147,6 +150,6 @@ if __name__ == "__main__":
             loss.backward()
             optimizer.step()
 
-        if (iter_n) % 50 == 0:
+        if (iter_n) % 30 == 0:
             print("iter-->",iter_n, "loss-->", loss.data)
 
