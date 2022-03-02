@@ -25,16 +25,15 @@ def g(x):
         concrete example functions value
     e.x.
     ===================
-    2x^{3} + x^{2} + x + 1
+    x + 1
     '''
-    return 2 * x ** 3 + x ** 2 + x + 1
+    return x + 1
 
 
 def d(x, i, alpha):
     if i < np.ceil(alpha):
         return 0.0
     return math.gamma(i + 1) / math.gamma(i + 1 - alpha) * x ** (i - alpha)
-
 
 
 def f(x, a_value, n=3):
@@ -68,7 +67,7 @@ def f(x, a_value, n=3):
         er = (total_value - g_result) ** 2 + lambda_v * (a_value[0] - 1.0) ** 2
         error += er
 
-    return torch.sqrt(error / (len(x) + 1))
+    return error / (len(x) + 1)
 
 
 class DataSet(object):
@@ -99,12 +98,6 @@ class MyNet(nn.Module):
         x = F.relu(x)
         x = self.linear2(x)
         return x
-
-
-def get_arg():
-
-
-    return parser.parse_args()
 
 
 if __name__ == "__main__":
@@ -140,9 +133,7 @@ if __name__ == "__main__":
         dataset=dataset,
         batch_size=data_nums // 2,
         shuffle=True,
-        num_workers=0
-    )
-
+        num_workers=0)
 
     model = MyNet(input_param, hidden_num, output_param)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
