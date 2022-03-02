@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-#!/usr/local/bin/python
-# Author: yuxiangyu
-# Date: Mar 1, 2022 10:10 AM
-# =============================
-
 # article
 codes of  the article "An artificial neural network approach for solving space fractional differential equations"
 
