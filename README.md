@@ -6,5 +6,6 @@ P.F. Dai & X.Y. YU
 
 
 # The Statement
-This paper has a 1 example of the code, if necessary, due to copyright issues, please contact the author to obtain.
+This paper has a 1 example of the code, if necessary, due to copyright issues, please contact the authors to get the code.
+
 Contact: xiangyu.yu@unidt.com
