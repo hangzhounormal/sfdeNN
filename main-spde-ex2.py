@@ -110,7 +110,8 @@ if __name__ == "__main__":
     parser.add_argument("hidden_layer", type=int, default=30, help="hidden nums")
     parser.add_argument("j_value", type=int, help="a_{j}")
     parser.add_argument("lr", type=float, help="learning rate")
-    args = get_arg()
+    # args = get_arg()
+    args = parser.parse_args()
 
     # axis
     data_nums = args.data
